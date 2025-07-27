@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatIB</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body data-theme="light">
+    <div class="bg-animation"></div>
+    <div class="grid-overlay"></div>
+    
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon"><img src="3829062218d14a8c2794aec816d34ee3-removebg-preview.png" alt=""></div>
+                <div>
+                    <h1>ChatIB AI</h1>
+                    <div class="status-indicator">
+                        <div class="status-dot"></div>
+                        <span> Chai-Powered AI</span>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="btn" onclick="clearChat()">Clear</button>
+                <button class="btn" onclick="exportChat()">Export</button>
+                <div class="theme-toggle" onclick="toggleTheme()"></div>
+            </div>
+        </header>
+        
+        <div class="chat-container" id="chatContainer">
+            <div class="welcome-message">
+                <h2>Welcome to ChatIB</h2>
+                <p><img src="https://pixels.crd.co/assets/images/gallery70/fc0464af.gif?v=29416114" alt=""> Your AI assistant is online. What would you like to do today?</p>
+            </div>
+        </div>
+        
+        <div class="input-container">
+            <div class="input-stats">
+                <div class="char-counter">
+                    <span>Characters: </span>
+                    <span id="charCount">0</span>
+                    <span>/2000</span>
+                </div>
+                <div class="api-status">
+                    <div class="api-dot"></div>
+                    <span id="apiStatus">DeepSeek R1 Ready</span>
+                    <span style="margin-left: 10px; font-size: 10px; opacity: 0.8;">(OpenRouter API)</span>
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <textarea 
+                    class="input-field" 
+                    id="messageInput" 
+                    placeholder="Type your message..."
+                    rows="1"
+                    maxlength="2000"
+                ></textarea>
+                <button class="send-btn" id="sendBtn" onclick="sendMessage()">
+                    ➤
+                </button>
+            </div>
+        </div>
+    </div>
+<button id="ttsToggle" title="Toggle Voice">🔈</button>
+<script src="main.js"></script>
+</body>
+</html>
