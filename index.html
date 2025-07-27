@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatIB</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body data-theme="green">
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+    <div class="audio-controls">
+        <div class="audio-button" id="muteButton" title="Mute/Unmute">
+            <span id="muteIcon">🔊</span>
+            <div class="volume-indicator" id="volumeIndicator">🎵</div>
+        </div>
+    </div>
+    <div class="theme-toggle-container">
+        <div class="theme-toggle">
+            <div class="theme-option active" data-theme="green">👽 Green</div>
+            <div class="theme-option" data-theme="blue">☄️ Blue</div>
+        </div>
+    </div>
+    <div class="circuit-bg"></div>
+    <div class="grid-overlay"></div>
+    <div class="particles" id="particles"></div>
+
+    <audio id="introAudio" preload="auto">
+        <source src="ElevenLabs_2025-07-27T12_53_41_Rachel_pre_sp100_s50_sb75_se0_b_m2.mp3" type="audio/mpeg">
+    </audio>
+ <div class="container">
+        <div class="main-content">
+            <div class="video-section">
+                <div class="video-container">
+                    <div class="glow-orb"></div>
+                    <div class="video-placeholder">
+                        <div>
+                            <div style="font-size: 48px; margin-bottom: 15px;"></div>
+                           <div></div>
+                            <div style="font-size: 14px; opacity: 0.7; margin-top: 8px;">
+                             <img src="135d5f9bd4bf86909a9b5aee996a7441.gif" alt="">
+                            </div>
+                        </div>
+                        <div class="audio-visualizer" id="audioVisualizer">
+                            <div class="audio-bar"></div>
+                            <div class="audio-bar"></div>
+                            <div class="audio-bar"></div>
+                            <div class="audio-bar"></div>
+                            <div class="audio-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="brand-logo">
+                    <div class="logo-icon"><img src="f05665c3de1f51f381718d3e9a12bd54-removebg-preview.png" alt=""></div>
+                    <div class="brand-name">ChatIB AI</div>
+                </div>
+                <h1 class="main-heading">
+                    Meet Your Next-Gen
+                    <br>Digital Assistant
+                </h1>
+                <p class="description">
+                    Experience the future of AI conversation with ChatIB. Powered by advanced language models, I'm here to assist, create, and innovate alongside you.
+                </p>
+
+                <a href="main.html" class="cta-button">
+                    <span>Let's Chat, Human</span>
+                    <span class="button-icon"><img src="https://pixels.crd.co/assets/images/gallery03/00410799.gif?v=29416114" alt=""></span>
+                </a>
+
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">⚡</div>
+                        <div class="feature-text">Lightning Fast</div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🤖</div>
+                        <div class="feature-text">Smart AI</div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🌐</div>
+                        <div class="feature-text">Always Online</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="index.js"></script>
+        </body>
+    </html>
